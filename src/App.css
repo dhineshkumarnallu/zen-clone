@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
+.app-containers{
+  margin: 0px auto;
+  max-width: 1280px;
+  width:100%;
+  background: hsl(77, 30%, 95%);
+  height: 100vh;
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.zen-header{
+  height: 80px;
+  width:100%;
   display: flex;
-  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  background: #cc0ac2;
+}
+.brand-logo{
+  height: 80px;
+  
+}
+.zen-contect-area-container{
+  height:calc(100vh-80px);
+  width: 100%;
+  background: rgb(22, 5, 172);
+  display: flex;
+  
+  
+}
+.zen-sidebar > sidebar-header-branding{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.zen-sidebar{
+  width:20%;
+  height:calc(100vh-80px);
+  background-color:#f4f8fa;
+} 
+
+.zen-sidebar-nav>ul{
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+
+}
+.zen-sidebar-nav > ul >li{
+  height: 100%;
+  width:100%;
+  background: rgb(176, 176, 241);
+  padding: 10px;
+  cursor: pointer;
+}
+.zen-sidebar-nav > ul >li:hover{
+  background: rgba(148, 5, 219, 0.623);
+  color: aqua;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.zen-contect-area{
+  width: 100%;
+  height:100vh;
+  background-color: darkgoldenrod;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zen-sub-journey-container > a {
+  color: #bbcee7;
+  text-decoration: none;
+  
+}
+.zen-sub-journey-container :hover{
+color: gold;
+text-decoration: underline;
+}
+.zen-sub-journey-container{
+  min-width: 250px;
+  display: flex;
+  justify-content: space-around;
 }
